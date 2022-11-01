@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width">
+  <title>Java and its uses</title>
+  <link href="style.css" rel="stylesheet" type="text/css" />
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.2/animate.min.css">
+  <style>
+    .wrapper {
+	width: 1170px;
+	margin: auto;
+  background-image: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.3)), url('images/java1.jpg');	
+  height: 50vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	position: relative; 
+}
+
+    .navigation{
+      float: right; 
+      list-style: none; 
+      margin-top: -200px; 
+
+      
+    }
+  
+    .navigation li{
+      display: inline-block; 
+      
+    }
+    .navigation li a{
+      color: black; 
+      text-decoration: none; 
+      padding: 5px 20px; 
+      font-family: poppins; 
+      font-size: 16px; 
+      text-transform: uppercase; 
+    }
+    .headerText{
+      width: 570px; 
+      margin: 20% 25%; 
+      text-align: center; 
+    }
+    .headerText h1{
+      text-align: center; 
+      color: white; 
+      text-transform: uppercase; 
+      font-size: 60px; 
+    }
+    .change_content:after{
+      content: "";
+      animation: changetext 15s infinite linear; 
+      color: #7FFFD4; 
+    }
+
+    @keyframes changetext {
+      0% {content: "Java";}
+      20%{content: "Python";}
+      35% {content: "SQL";}
+      60%{content: "C++";}
+      80%{content: "R";}
+      100%{content: "JavaScript";}
+      
+    }{}
+    
+
+    
+  </style>
+
+</head>
+
+<body>
+  <header >
+  <div class = "wrapper">
+
+    <div class="navigation">
+  <ul> 
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "java.html"> Java</a></li>
+    <li><a href ="game.html">Play Game!</a></li>
+  </ul>
+    </div>
+    
+    <div class = "headerText">
+    <h1> Learning <span class ="change_content"></span> Made Easy</h1>
+    </div>
+  </div>
+  </header>
+
+  <script src="script.js"></script>
+    
+</body>
+
+</html>

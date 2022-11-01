@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <title> Java Tutorial</title>
+    <link href="style.css" rel="stylesheet" type="text/css" />
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;600;700;900&display=swap" rel="stylesheet">
+    
+
+  <style>
+    html{
+      scroll-behavior: smooth; 
+    }
+    .navigation{
+      float: right; 
+      list-style: none; 
+      margin-top: 5px; 
+      font-color:white;
+
+      
+    }
+  
+    .navigation li{
+      display: inline-block; 
+      
+    }
+    .navigation li a{
+      color: white; 
+      text-decoration: none; 
+      padding: 5px 20px; 
+      font-family: poppins; 
+      font-size: 16px; 
+      text-transform: uppercase; 
+    }
+  header{
+      	background: linear-gradient(rgba(0, 0, 0, 0.6), rgba(0, 0, 0, 0.1)), url('images/java.jpg');	
+  height: 20vh;
+	-webkit-background-size: cover;
+	background-size: cover;
+	background-position: center center;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+	position: relative; 
+    text-align:center;
+    }
+    .para{
+  line-height:3; 
+}
+    
+  </style>
+  </head>
+
+  <body>
+    <header>
+    <div class ="navigation">
+    <ul>
+    <li><a href = "index.html">Home</a></li>
+    <li><a href = "java.html"> Java</a></li>
+    <li><a href ="game.html">Play Game!</a></li>
+  </ul>
+    </div>
+    
+    <h1 style="text-align:center;font-family:poppins;color:white;"> JAVA <span style="color:#7FFFD4;">'ROCK PAPER SCISSOR'</span> GAME TUTORIAL</span> </h1>
+  <br><br>
+  <p style ="padding-left:50px;padding-right:50px;color:gray;"> Are you ready to create your own JAVA game? If it is your first time, woohoo, welcome! We hope you leave this website with an amazing working app. <em> YOU CAN DO IT and we are here to help.</em> </p> 
+      </header>
+    <br><br><br><br><br><br><br>
+    <a href="https://www.youtube.com/watch?v=_wZ559L_gqg"><img src="images/javaLibrary.jpg" align='right' alt="JAVA Library" width="300" height="200"></a>
+<h2 style="padding-left:150px;"> Libraries in Java </h2>
+<p style="padding-right:350px; padding-left:150px;color:gray;" class="para"> A Java library is just a collection of classes that have been written by somebody else already. You download those classes and tell your computer about them, and then you can use those classes in your code. This lets you expand what Java can do and rely on code that other people have tested instead of doing everything yourself. 
+  <br>
+  Ex) import java.util.Scanner;  
+</n>import java.util.List; 
+import java.util.Random; 
+import java.util.ArrayList; 
+
+</p>
+<br><br>
+   <a href="https://www.youtube.com/watch?v=huZ1neRqNho"> <img src="images/javaScanner.jpg" align='left' alt="Scanner" width="300" height="200" style="margin:10px 150px;"></a>
+  
+  <h2 style ="padding-left: 150px;"> Scanner in Java</h1>
+  <p style="padding-right:50px;color:gray;"class="para"> Scanner is a class in java. util package used for obtaining the input of the primitive types like int, double, etc. and strings. It is the easiest way to read and get input in a Java program. 
+  <br>
+    EX) Scanner response = new Scanner(System.in); 
+    String userResponse=response.next();
+  </p>
+    <br><br>
+<a href="https://www.youtube.com/watch?v=AhwIYAXPASw"> <img src="images/javaRandom.jpg" align='right' alt="Java Random" width="300" height="300"></a>
+<h2 style="padding-left:150px;"> Randomness </h2>
+<p style="padding-right:350px; padding-left:150px;color:gray;" class="para"> The Random class is imported so that the computer can pick a random item from a list of 3 items -- Paper, Scissor, Rock.  
+  <br>
+  Ex) Random pick = new Random(); <br>
+    String computerPick = <br>options.get(pick.nextInt(options.size())); <br>
+
+    System.out.println ("\n Computer picked: "+ computerPick); 
+
+</p> 
+    <br><br>
+    <a href="https://www.youtube.com/watch?v=pTAda7qU4LY"> <img src="images/javaList.jpg" align='left' alt="Array" width="300" height="400" style="margin:10px 150px;"></a>
+  
+  <h2 style ="padding-left: 150px;"> ArrayList in Java</h1>
+  <p style="padding-right:50px;color:gray;"class="para"> The difference between a built-in array and an ArrayList in Java, is that the size of an array cannot be modified (if you want to add or remove elements to/from an array, you have to create a new one). While elements can be added and removed from an ArrayList whenever you want. EX)options = new ArrayList();options.add("Rock");options.add("Paper");options.add("Scissor"); 
+  </p>
+ 
+<br><br><br><br><br><br>
+   <a href="https://www.youtube.com/watch?v=P6ivQ3QRq0I"> <img src="images/javaConditionalStatement.jpg" align='right' alt="Condition Statement" width="450" height="450"></a>
+<h2 style="padding-left:150px;"> Conditional Statements </h2>
+<p style="padding-right:350px; padding-left:150px;color:gray;" class="para"> The if-else statement, to choose between two alternatives. 
+<br>
+  && is the 'and' symbol for Java. 
+  <br>
+  || is the 'or' symbol for Java. 
+  <br>
+  .equals is used to compare two string values. 
+  <br>
+  == is used for like numbers, integers, etc. 
+<br>
+  Ex) if (userResponse.equals("Rock") && computerPick.equals("Scissor")){<br>
+      System.out.println (" \n Woohoo! You Won this round."); <br>
+      score ++;  <br>
+    } 
+</p> 
+    <br><br>
+  <a href="https://www.youtube.com/watch?v=CwjSpUIFi7w">  <img src="images/javaLoop.jpg"align='left' alt="For Loop" width="300" height="200" style="margin:10px 150px;"></a>
+  
+  <h2 style ="padding-left: 150px;">  For Loop in Java</h1>
+  <p style="padding-right:50px;color:gray;"class="para"> A for loop is a repetition control structure that allows you to efficiently write a loop that needs to be executed a specific number of times. A for loop is useful when you know how many times a task is to be repeated.
+EX) for (int i = 1; i<=5; ++i)
+</p>
+
+  </body>
+</html>
